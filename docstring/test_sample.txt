@@ -1,0 +1,19 @@
+>>> from sample import palindromo2
+>>> from sample import User
+>>> palindromo2('Anita lava la tina')
+True
+
+>>> palindromo2('Hola mundo')
+False
+
+>>> sentence = 'Oso'
+>>> palindromo2(sentence)
+True
+
+>>> username = "ABC"
+>>> password = "123"
+>>> user = User(username, password)
+>>> user.username == username
+True
+>>> user.password == password
+True
