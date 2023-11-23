@@ -3,14 +3,16 @@ Cuando se trata de un proyecto tiene que existir orden y un ejemplo seria este p
 se encuentra ahora con un formato de paquetes y separado en directorios con una estructura básica con los archivos \_\_init\_\_.py para declarar paquetes
 dentro de models y de tests
 
-root
--> models
-    -> product.py
-    -> shopping_cart.py
-    -> test
-        -> test_shopping_cart
-        -> test_product
--> main.py
+```mermaid
+graph TD;
+  root-->models;
+  root-->main.py;
+  models-->product.py
+  models-->shopping_cart.py
+  models-->test
+  test-->test_shopping_cart.py
+  test-->test_product.py
+```
 
 La ejecución de los test en la terminal:
 ```sh
