@@ -108,3 +108,28 @@ Se puede parametrizar las pruebas para flexibilizar las pruebas y se parametriza
 ```sh
 pytest app/test/test_task.py  -v
 ```
+
+# Coverage
+La libreria coverage permite medir que porcentaje de código se ha ejecutado se debe instalar primero utilizando
+```sh
+pip install coverage
+```
+y se puede ejecutar
+```sh
+coverage run -m pytest app/test/test_task.py
+```
+Se creará un archivo .coverage que se puede visualizar ejecutando
+```sh
+coverage report
+# para mas detalles ejecutar el argumento -m
+coverage report -m
+```
+Para utilizar con unittest se ejecuta de la siguiente forma:
+```sh
+coverage run -m unittest discover
+```
+Se creará un archivo .coverage que se puede visualizar ejecutando
+```sh
+coverage report
+# para mas detalles ejecutar el argumento -m
+coverage report -m
