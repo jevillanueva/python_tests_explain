@@ -133,3 +133,10 @@ Se creará un archivo .coverage que se puede visualizar ejecutando
 coverage report
 # para mas detalles ejecutar el argumento -m
 coverage report -m
+```
+Para visualizar la cobertura en formato webpage utilizar 
+```sh
+coverage html
+```
+Generará una carpeta "htmlcov" con contenido html con el reporte de la cobertura de código
+donde abriendo el index desde un navegador web se puede visualizar el contenido de la cobertura
